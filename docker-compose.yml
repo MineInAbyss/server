@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  test:
+    build: minecraft
+    env_file: default.env
+    volumes:
+      - ./base:/base:cached,ro
+      - ./diff:/diff:delegated
+    privileged: True
+    ports:
+      - 25565:25565
+#  waterfall:
+#    build: waterfall

@@ -1,0 +1,95 @@
+# ###############################################
+# Disable Mobs 2.2
+# For Bukkit Build 1.14.4
+# By: Jakeob22
+# Select 'true' if you want them to spawn
+# Select 'false' if you don't want them to spawn
+# It's that easy!!!
+# ###############################################
+
+world_nether:
+  blaze: true
+  ghast: true
+  magma_cube: true
+  pig_zombie: true
+  wither_skeleton: true
+world:
+  blaze: true
+  cat: true
+  cave_spider: true
+  chicken: true
+  cod: true
+  cow: true
+  creeper: true
+  dolphin: true
+  donkey: true
+  drowned: true
+  elder_guardian: true
+  ender_dragon: true
+  enderman: true
+  endermite: true
+  evoker: true
+  fox: true
+  ghast: true
+  giant: true
+  guardian: true
+  horse: true
+  husk: true
+  illusioner: true
+  iron_golem: true
+  llama: true
+  magma_cube: true
+  mule: true
+  mushroom_cow: true
+  ocelot: true
+  panda: true
+  parrot: true
+  phantom: false
+  pig: true
+  pig_zombie: true
+  pillager: true
+  polar_bear: true
+  pufferfish: true
+  rabbit: true
+  ravager: true
+  salmon: true
+  sheep: true
+  shulker: true
+  silverfish: true
+  skeleton: true
+  slime: true
+  snowman: true
+  spider: true
+  squid: true
+  stray: true
+  trader_llama: true
+  tropical_fish: true
+  turtle: true
+  vex: true
+  villager: true
+  wandering_trader: true
+  witch: true
+  wither: true
+  wither_skeleton: true
+  wolf: true
+  zombie: true
+  zombie_horse: true
+  zombie_villager: true
+  bat: false
+LayerOneLower:
+  bat: false
+  phantom: false
+LayerTwo:
+  bat: false
+  phantom: false
+LayerThree:
+  bat: false
+  phantom: false
+LayerFour:
+  bat: false
+  phantom: false
+LayerFive:
+  bat: false
+  phantom: false
+LayerTwot:
+  phantom: false

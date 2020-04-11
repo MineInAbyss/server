@@ -1,0 +1,11 @@
+# PLEASE REMOVE ALL EXISTING DEADCHESTS BEFORE EDITING THIS FILE
+HolographicPrefixName: Owner
+HolographicLoading: Loading...
+HolographicInfinyChest: Infiny chest
+HolographicSuffixTimer: left
+CommandNotOwner: This is not your dead chest !
+CommandReloading: Reload successfull..
+CommandNoPermission: You need permission
+CommandNoDeadChest: You don't have any deadchest
+CommandListAll: List of all dead chests
+CommandListOwn: List of your dead chests

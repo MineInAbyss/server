@@ -1,0 +1,21 @@
+debug: false
+autogeneratehashes: true
+disable-metrics: true
+messages:
+  usepack: You now use the pack %pack%!
+  packlisthead: 'Packs available to you:'
+  nopacks: No packs found!
+packs:
+  models:
+    url: https://github.com/MineInAbyss/MineInAbyss-resourcepack/releases/latest/download/MineInAbyss-Models.zip
+    hash: e4e9ffcbbbaad9087adb69c69f50dca421aeb71c
+    format: 4
+    restricted: false
+    permission: bungeeresourcepacks.pack.models
+  emptypack:
+    url: https://github.com/Phoenix616/BungeeResourcepacks/blob/master/Empty.zip?raw=true
+    hash: c05faed4680570a6159823e13fbae2ae830166ab
+empty: emptypack
+global:
+  pack: models
+  send-delay: 40

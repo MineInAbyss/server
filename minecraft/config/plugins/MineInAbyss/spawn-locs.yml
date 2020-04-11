@@ -1,0 +1,20 @@
+spawns:
+- location:
+    ==: org.bukkit.Location
+    world: world
+    x: -547.5
+    y: 128.0
+    z: -30.5
+    pitch: -5.630412
+    yaw: 89.950935
+  display-item:
+    ==: org.bukkit.inventory.ItemStack
+    v: 2230
+    type: BLACK_WOOL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Inbyo Fur
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE

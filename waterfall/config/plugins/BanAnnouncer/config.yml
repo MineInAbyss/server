@@ -1,0 +1,45 @@
+# The channel(s) id where the messages will be sent
+# If you don't know how to get a channel id... https://www.google.com/?q=discord+how+to+get+channel+id
+channels-to-announce:
+  - 449308250140049418
+
+# If the text is empty (nothing between the double quotes),
+#    the message will not be sent (a.k.a. the message is "disabled"), for example:
+#
+#    kick: "" <-- this will disable the message
+#
+#    If you don't want to use embed messages you can use pure text, for ex.:
+#
+#    kick: "The player %player% was kicked by %staff%"
+#
+#    
+# Variables are self-explained...
+messages:
+  kick:      "{embed:kick}"
+  ban:       "{embed:ban}"
+  tempban:   "{embed:tempban}"
+  mute:      "{embed:mute}"
+  tempmute:  "{embed:tempmute}"
+  banip:     "{embed:banip}"
+  tempbanip: "{embed:tempbanip}"
+  warn:      "{embed:warn}"
+  tempwarn:  "{embed:tempwarn}"
+  unbanip:   "{embed:unbanip}"
+  unwarn:    "{embed:unwarn}"
+  unmute:    "{embed:unmute}"
+  unban:     "{embed:unban}"
+
+# The plugin used for manage the punishments
+# Possible values:
+#     auto        = Auto detect
+#     advancedban = Use AdvancedBan
+#     litebans    = Use LiteBans
+#     maxbans     = Use MaxBansPlus
+punishment-manager: auto
+
+# If it's set to false, the punishments made
+#    with the '-s' flag of LiteBans will be sent anyways.
+ignore-silent: false
+
+# Do not change this or i'll eat your cookies
+config-version: 4

@@ -1,0 +1,65 @@
+# This is the default configuration file of BungeeTabListPlus.
+#
+# Since the configuration of the plugin is quite complex you
+# might want to have a look at the wiki from time to time.
+#
+# Wiki: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki
+#  Placeholders: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Placeholders
+#  Examples: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Examples
+#
+
+# Configure who can see the tab lists
+# See https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/MultipleTablists
+showTo: all
+priority: 0
+
+showHeaderFooter: true
+header:
+- |-
+  &aMine In Abyss
+headerAnimationUpdateInterval: 0.2
+
+footer:
+- |-
+  Ping: ${viewer_colored_ping}ms
+footerAnimationUpdateInterval: 0.5
+
+# Configure whether hidden players appear on the tab list
+# see https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Hidden-Players
+hiddenPlayers: VISIBLE_TO_ADMINS
+
+# Player sets are required to display players and player counts on the tab list.
+# See https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Configuration-Basics-Part-4---Player-sets
+# playerSets:
+  # all_players: all
+
+# We want a dynamic size tab list
+type: DYNAMIC_SIZE
+
+customPlaceholders:
+  other_server_prefix: # makes players on other servers gray
+    !conditional
+    condition: '${viewer server} == ${player server}'
+    true: '&f'
+    false: '&7'
+  viewer_colored_ping0:
+    !conditional
+    condition: "${viewer ping} < 50"
+    true: "&a${viewer ping}"
+    false: "&e${viewer ping}"
+  viewer_colored_ping:
+    !conditional
+    condition: "${viewer ping} < 150"
+    true: ${viewer_colored_ping0}
+    false: "&c${viewer ping}"
+
+playerSets:
+  global:
+    filter: "true"
+    hiddenPlayers: "VISIBLE" # Hidden players show up on the tab list, avoids gliches
+
+playerSet: global
+
+playerOrder: "playerServerFirst,serverAlphabetically,vaultGroupInfo,alphabetically"
+
+playerComponent: {text: "${other_server_prefix}${player name}", icon: "${player skin}", ping: "${player ping}"}

@@ -1,0 +1,193 @@
+sections:
+  -
+    name: city
+    refTop: [0, 0, 0]
+    refBottom: [-494, 15, 121]
+    region: [-1535, -1535, 1535, 1535]
+    world: world
+  -
+    name: l1s1
+    refTop: [-494, 235, 121]
+    refBottom: [-410, 17, 106]
+    region: [-768, -768, 767, 767]
+    world: LayerOneLower
+  -
+    name: l1s2
+    refTop: [1094, 237, 90]
+    refBottom: [1102, 13, -93]
+    region: [864, -656, 2143, 623]
+    world: LayerOneLower
+  -
+    name: l1s3
+    refTop: [2350, 233, -93]
+    refBottom: [2433, 9, -77]
+    region: [2240, -528, 3263, 495]
+    world: LayerOneLower
+  -
+    name: l1s4
+    refTop: [3537, 229, -77]
+    refBottom: [3602, 11, 70]
+    region: [3344, -528, 4367, 495]
+    world: LayerOneLower
+  -
+    name: l1s5
+    refTop: [4594, 231, 54]
+    refBottom: [4799, 17, -204]
+    region: [4464, -416, 5231, 351]
+    world: LayerOneLower
+  -
+    name: l1s6
+    refTop: [5663, 237, -204]
+    refBottom: [5663, 9, -157]
+    region: [5328, -416, 6095, 351]
+    world: LayerOneLower
+  -
+    name: l2s1
+    refTop: [-49, 229, -125]
+    refBottom: [-11, 17, -272]
+    region: [-512, -512, 511, 511]
+    world: LayerTwo
+  -
+    name: l2s2
+    refTop: [1109, 237, -272]
+    refBottom: [1281, 18, -333]
+    region: [608, -512, 1631, 511]
+    world: LayerTwo
+  -
+    name: l2s3
+    refTop: [2401, 238, -333]
+    refBottom: [2304, 18, -258]
+    region: [1728, -512, 2751, 511]
+    world: LayerTwo
+  -
+    name: l2s4
+    refTop: [3296, 238, -258]
+    refBottom: [3228, 25, -90]
+    region: [2848, -384, 3615, 383]
+    world: LayerTwo
+  -
+    name: l2s5
+    refTop: [5116, 245, -138]
+    refBottom: [5120, 18, -196]
+    region: [3712, -1456, 6527, 1359]
+    world: LayerTwo
+  -
+    name: l3s1
+    refTop: [0, 238, -149]
+    refBottom: [0, 25, -149]
+    region: [-384, -384, 384, 384]
+    world: LayerThree
+  -
+    name: l3s2
+    refTop: [832, 232, -149]
+    refBottom: [832, 25, -149]
+    region: [447, -384, 1216, 384]
+    world: LayerThree
+  -
+    name: l3s3
+    refTop: [1664, 232, -149]
+    refBottom: [1664, 25, -149]
+    region: [1279, -384, 2047, 384]
+    world: LayerThree
+  -
+    name: l3s4
+    refTop: [2496, 232, -149]
+    refBottom: [2505, 25, -150]
+    region: [2111, -384, 2879, 384]
+    world: LayerThree
+  -
+    name: l3s5
+    refTop: [3337, 232, -150]
+    refBottom: [3223, 25, 92]
+    region: [2943, -384, 4711, 384]
+    world: LayerThree
+  -
+    name: l3s6
+    refTop: [4055, 232, 92]
+    refBottom: [4160, 25, -149]
+    region: [3775, -384, 4543, 384]
+    world: LayerThree
+  -
+    name: l3s7
+    refTop: [4992, 232, -149]
+    refBottom: [4992, 25, -149]
+    region: [4607, -384, 5375, 384]
+    world: LayerThree
+  -
+    name: l4s1
+    refTop: [0, 232, -148]
+    refBottom: [-176, 13, -513]
+    region: [-896, -896, 895, 895]
+    world: LayerFour
+  -
+    name: l4s2
+    refTop: [1536, 233, -497]
+    refBottom: [1550, 19, -409]
+    region: [944, -752, 2479, 783]
+    world: LayerFour
+  -
+    name: l4s3
+    refTop: [3134, 239, -409]
+    refBottom: [3307, 9, -360]
+    region: [2528, -752, 4063, 783]
+    world: LayerFour
+  -
+    name: l4s4
+    refTop: [4891, 229, -360]
+    refBottom: [5082, 33, -253]
+    region: [4112, -752, 5647, 783]
+    world: LayerFour
+  -
+    name: l4s5
+    refTop: [7114, 253, -253]
+    refBottom: [6866, 11, -391]
+    region: [6272, -624, 7551, 655]
+    world: LayerFour
+  -
+    name: l4s6
+    refTop: [9090, 231, -391]
+    refBottom: [8846, 8, -570]
+    region: [8240, -880, 10031, 911]
+    world: LayerFour
+  -
+    name: l4s7
+    refTop: [11742, 228, -586]
+    refBottom: [12043, 17, -884]
+    region: [11008, -1024, 13055, 1023]
+    world: LayerFour
+  -
+    name: l4s8
+    refTop: [15579, 237, -868]
+    refBottom: [15509, 25, -1264]
+    region: [14032, 1551, 17103, -1520]
+    world: LayerFour
+  -
+    name: l5s1
+    refTop: [-58, 245, -1280]
+    refBottom: [925, 25, 1363]
+    region: [2815, 2815, -2688, -2688]
+    world: LayerFive
+  -
+    name: l5s2
+    refTop: [6525, 245, 1299]
+    refBottom: [5195, 25, -1702]
+    region: [2912, 2623, 8159, -2496]
+    world: LayerFive
+  -
+    name: l5s3
+    refTop: [10011, 245, -1750]
+    refBottom: [10592, 25, 1364]
+    region: [8240, -2544, 13231, 2703]
+    world: LayerFive
+  -
+    name: l5s4
+    refTop: [15552, 245, 1348]
+    refBottom: [15688, 25, 784]
+    region: [13328, 2431, 18319, -2304]
+    world: LayerFive
+  -
+    name: l5s5
+    refTop: [20504, 245, 960]
+    refBottom: [0, 0, 0]
+    region: [18400, -1744, 21983, 1839]
+    world: LayerFive

@@ -1,0 +1,4 @@
+
+# run the persist script
+MAILTO="linos95790@lagsixtome.com"
+*/1 * * * * /app/persist.sh

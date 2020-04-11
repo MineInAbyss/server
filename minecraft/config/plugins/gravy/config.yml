@@ -1,0 +1,35 @@
+debug_mode: false
+enable_chat_prefix: true
+chat_line_color: '&2'
+do_safe_grave_spawn: true
+save_timer: 60
+grave_timer: 86400
+enable_timer: true
+grave_block: DIRT
+spawn_zombie_on_not_owner_break: true
+spawn_zombie_on_owner_break: false
+zombie_hp: 20
+can_zombie_pickup_items: true
+execute_command_on_respawn: false
+execute_command_on_grave_break: false
+command_: ''
+command_on_grave_break: ''
+drop_items_on_player_kill: false
+enable_token_use: false
+enable_token_craft: false
+enable_token_drop: false
+token_drop_mob: GHAST
+token_drop_amount: 1
+token_drop_chance: 0.05
+token_item: MAGMA_CREAM
+token_craft_recipe: GOLD_INGOT:GOLD_INGOT:GOLD_INGOT-GOLD_INGOT:DIAMOND:GOLD_INGOT-GOLD_INGOT:CHEST:GOLD_INGOT
+use_vault: false
+grave_cost: 0
+enable_worldguard_support: true
+disabled_worlds:
+- LayerOneLower
+- LayerTwo
+- LayerThree
+worlds_aliases:
+- LayerFour::The Goblet of Giants
+- LayerFive::Sea of Corpses

@@ -1,0 +1,17 @@
+# Send debug messages
+debug: false
+doMobSpawns: false
+spawnSearchRadius: 128
+minChunkSpawnRad: 3
+maxChunkSpawnRad: 7
+maxChunkSpawnSearchRad: 9
+maxSpawnAmount: 50
+spawnTaskDelay: 1500
+mobCaps:
+  CREATURE: 20
+  MONSTER: 20
+  WATER_CREATURE: 5
+  MISC: 3
+  AMBIENT: 0
+addons:
+- AbyssalCreatures

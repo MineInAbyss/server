@@ -1,0 +1,50 @@
+[
+  {
+    "uuid": "541027d6-ba2f-4ec6-9809-9b38ed98b633",
+    "name": "Derongan",
+    "level": 4,
+    "bypassesPlayerLimit": true
+  },
+  {
+    "uuid": "c6307390-acda-48f8-8584-42087ad918f4",
+    "name": "Offz",
+    "level": 4,
+    "bypassesPlayerLimit": true
+  },
+  {
+    "uuid": "499c92e2-24e3-4cdd-b9c3-c8f2186609fa",
+    "name": "MilitaryPrincess",
+    "level": 4,
+    "bypassesPlayerLimit": true
+  },
+  {
+    "uuid": "950f9920-75c8-467f-a628-ce4722ba9a2a",
+    "name": "Plasmididdlydoo",
+    "level": 4,
+    "bypassesPlayerLimit": true
+  },
+  {
+    "uuid": "92967398-ac10-4e0b-8b06-e2fcee318b0c",
+    "name": "LoneReborn",
+    "level": 4,
+    "bypassesPlayerLimit": true
+  },
+  {
+    "uuid": "52b2681a-c60f-4631-b2de-82b71079842b",
+    "name": "Thardoc",
+    "level": 4,
+    "bypassesPlayerLimit": true
+  },
+  {
+    "uuid": "a71f595b-3ca8-4370-bb88-d6111b1f16c6",
+    "name": "Adar",
+    "level": 4,
+    "bypassesPlayerLimit": true
+  },
+  {
+    "uuid": "c75ee92c-2abb-488d-a1aa-fc86171b753e",
+    "name": "lizelive",
+    "level": 4,
+    "bypassesPlayerLimit": true
+  }
+]
