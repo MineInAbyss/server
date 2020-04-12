@@ -1,6 +1,6 @@
-FROM openjdk:13-alpine
+FROM openjdk:13-alpine as install
 
-VOLUME [ "/base", "/diff" ]
+VOLUME "/worlds"
 EXPOSE 25565
 
 # install the overlay fs tools
@@ -12,11 +12,8 @@ EXPOSE 25565
 ADD https://papermc.io/api/v1/paper/1.15.2/latest/download paper.jar
 RUN java -jar paper.jar --help
 
-ADD scripts ./
+FROM install as run
 ADD config ./
-
 # RUN xargs -a urls.txt -n 1 curl -O
 
-RUN chmod +x ./start.sh
-RUN ls
-ENTRYPOINT ./start.sh
+ENTRYPOINT java ${JAVA_ARGS} -Dcom.mojang.eula.agree=true -jar paper.jar --nojline --nogui -W /worlds -p 25565 

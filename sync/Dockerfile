@@ -1,3 +1,3 @@
 FROM amazon/aws-cli
-ADD *.sh .
+ADD *.sh ./
 ENTRYPOINT ./entrypoint.sh

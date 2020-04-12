@@ -4,16 +4,23 @@ services:
     build: minecraft
     env_file: default.env
     volumes:
-      - ./base:/base:cached,ro
-      - ./diff:/diff:delegated
-    privileged: True
+      - worlds-test:/worlds
     ports:
       - 25565:25565
-  sql:
+  mysql:
     image: mysql
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=TRUE
   sync:
     build: sync
+    privileged: True
     volumes: 
       - aws:/root/.aws
+      - cloud:/cloud
+      - worlds-test:/worlds/test
 #  waterfall:
 #    build: waterfall
+volumes:
+  worlds-test:
+  aws:
+  cloud:
