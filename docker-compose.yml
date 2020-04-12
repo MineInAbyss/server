@@ -1,26 +1,39 @@
 version: "3.3"
 services:
-  test:
-    build: minecraft
-    env_file: default.env
-    volumes:
-      - worlds-test:/worlds
-    ports:
-      - 25565:25565
-  mysql:
-    image: mysql
-    environment:
-      - MYSQL_ALLOW_EMPTY_PASSWORD=TRUE
   sync:
     build: sync
     privileged: True
     volumes: 
       - aws:/root/.aws
-      - cloud:/cloud
+      - ./cloud:/cloud
       - worlds-test:/worlds/test
+      - worlds-survival:/worlds/survival
+      - worlds-build:/worlds/build
+  db:
+    image: mysql
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=TRUE
+  test:
+    restart: always
+    build: minecraft
+    env_file: default.env
+    depends_on:
+      - sync
+      - db
+    volumes:
+      - worlds-test:/worlds
+    ports:
+      - 25565:25565
+
 #  waterfall:
 #    build: waterfall
 volumes:
   worlds-test:
+    driver_opts:
+      type: tempfs
+  worlds-survival:
+    tmpfs: True
+  worlds-build:
+    tmpfs: True
   aws:
   cloud:
