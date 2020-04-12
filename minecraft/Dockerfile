@@ -15,7 +15,7 @@ RUN java -jar paper.jar --help
 ADD scripts ./
 ADD config ./
 
-RUN xargs -a urls.txt -n 1 curl -O
+# RUN xargs -a urls.txt -n 1 curl -O
 
 RUN chmod +x ./start.sh
 RUN ls

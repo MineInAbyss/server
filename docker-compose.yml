@@ -9,5 +9,11 @@ services:
     privileged: True
     ports:
       - 25565:25565
+  sql:
+    image: mysql
+  sync:
+    build: sync
+    volumes: 
+      - aws:/root/.aws
 #  waterfall:
 #    build: waterfall
