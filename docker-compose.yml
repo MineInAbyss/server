@@ -17,6 +17,8 @@ services:
     restart: always
     privileged: True
     build: minecraft
+    tmpfs:
+      - /tmp
     env_file: default.env
     depends_on:
       - db
