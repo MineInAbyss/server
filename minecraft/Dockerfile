@@ -1,6 +1,6 @@
 FROM openjdk:13-alpine as install
 
-VOLUME "/worlds"
+VOLUME "/cloud"
 EXPOSE 25565
 
 # install the overlay fs tools
@@ -14,6 +14,7 @@ RUN java -jar paper.jar --help
 
 FROM install as run
 ADD config ./
+ADD start.sh start.sh
 # RUN xargs -a urls.txt -n 1 curl -O
 
-ENTRYPOINT java ${JAVA_ARGS} -Dcom.mojang.eula.agree=true -jar paper.jar --nojline --nogui -W /worlds -p 25565 
+ENTRYPOINT ./start.sh

@@ -1,14 +1,14 @@
 version: "3.3"
 services:
-  sync:
-    build: sync
-    privileged: True
-    volumes: 
-      - aws:/root/.aws
-      - ./cloud:/cloud
-      - worlds-test:/worlds/test
-      - worlds-survival:/worlds/survival
-      - worlds-build:/worlds/build
+  # sync:
+  #   build: sync
+  #   privileged: True
+  #   volumes: 
+  #     - aws:/root/.aws
+  #     - cloud:/cloud
+  #     - worlds-test:/worlds/test
+  #     - worlds-survival:/worlds/survival
+  #     - worlds-build:/worlds/build
   db:
     image: mysql
     environment:
@@ -18,10 +18,11 @@ services:
     build: minecraft
     env_file: default.env
     depends_on:
-      - sync
       - db
+    environment: 
+      - UWU=test
     volumes:
-      - worlds-test:/worlds
+      - ./cloud:/cloud
     ports:
       - 25565:25565
 
