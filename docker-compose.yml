@@ -4,7 +4,7 @@ services:
     image: mysql
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=TRUE
-    ports:
+    expose:
     - 3306
   build:
     restart: always
@@ -19,8 +19,8 @@ services:
       - UWU=build
     volumes:
       - ./cloud:/cloud
-    ports:
-      - 25567:25565
+    expose:
+      - 25565
   survival:
     restart: always
     privileged: True
@@ -34,8 +34,8 @@ services:
       - UWU=survival
     volumes:
       - ./cloud:/cloud
-    ports:
-      - 25566:25565
+    expose:
+      - 25565
   waterfall:
     build: waterfall
     ports: 

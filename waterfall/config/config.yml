@@ -13,6 +13,7 @@ listeners:
   - build
   - survival
   bind_local_address: true
+  host: 0.0.0.0:25565
   max_players: 40
   ab_size: 60
   force_default_server: false
@@ -62,13 +63,13 @@ disabled_commands:
 servers:
   build:
     motd: Mine In Abyss
-    address: build:25566
+    address: build
     restricted: false
   survival:
     motd: Survive In Abyss
-    address: hostip:25567
+    address: survival
     restricted: false
   test:
     motd: Test In Abyss
-    address: hostip:25568
+    address: hostip
     restricted: false
