@@ -10,7 +10,6 @@ mkdir /sinkhole/upper /sinkhole/work
 mkdir /readonly
 mount -t overlay overlay -o lowerdir=/cloud,upperdir=/sinkhole/upper,workdir=/sinkhole/work /readonly
 
-
 # make ls links uwu
 ln -s /cloud/$UWU/world /worlds/world
 ln -s /readonly/master/world /worlds/master_world

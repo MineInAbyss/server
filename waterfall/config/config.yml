@@ -13,7 +13,6 @@ listeners:
   - build
   - survival
   bind_local_address: true
-  host: 0.0.0.0:25565
   max_players: 40
   ab_size: 60
   force_default_server: false
@@ -50,6 +49,8 @@ groups:
   - admin
   Offz:
   - admin
+  Lizelive:
+  - admin
 remote_ping_timeout: 5000
 connection_throttle: 4000
 log_commands: false
@@ -61,13 +62,13 @@ disabled_commands:
 servers:
   build:
     motd: Mine In Abyss
-    address: 35.174.94.149:25566
+    address: build:25566
     restricted: false
   survival:
     motd: Survive In Abyss
-    address: localhost:25567
+    address: hostip:25567
     restricted: false
   test:
     motd: Test In Abyss
-    address: 3.210.117.75
+    address: hostip:25568
     restricted: false
