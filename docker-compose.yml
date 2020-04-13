@@ -29,11 +29,7 @@ services:
 #    build: waterfall
 volumes:
   worlds-test:
-    driver_opts:
-      type: tempfs
   worlds-survival:
-    tmpfs: True
   worlds-build:
-    tmpfs: True
   aws:
   cloud:
