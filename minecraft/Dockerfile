@@ -7,14 +7,14 @@ EXPOSE 25565
 # RUN git clone https://github.com/kmxz/overlayfs-tools.git
 # RUN make ./overlayfs-tools
 
-
+RUN apk add curl
 # install paper mc + pre patch it.
-ADD https://papermc.io/api/v1/paper/1.15.2/latest/download paper.jar
-RUN java -jar paper.jar --help
+RUN curl -s -o paper.jar https://papermc.io/api/v1/paper/1.15.2/latest/download && java -jar paper.jar --help
 
-FROM install as run
+#FROM install as run
 ADD config ./
 ADD start.sh start.sh
-# RUN xargs -a urls.txt -n 1 curl -O
+
+RUN cd plugins && xargs -a urls.txt -n 1 curl -Os && cd ..
 
 ENTRYPOINT ./start.sh

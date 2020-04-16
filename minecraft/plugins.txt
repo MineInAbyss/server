@@ -1,5 +1,0 @@
-https://media.forgecdn.net/files/2869/453/worldedit-bukkit-7.1.0.jar
-https://media.forgecdn.net/files/2855/477/worldguard-bukkit-7.0.2.jar
-https://media.forgecdn.net/files/2704/903/Vault.jar
-https://media.forgecdn.net/files/2852/727/craftbook-3.10.1.jar
-https://www.spigotmc.org/resources/coreprotect.8631/download?version=314083
