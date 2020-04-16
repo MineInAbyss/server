@@ -1,6 +1,7 @@
 version: "3.3"
 services:
   db:
+    restart: always
     image: mysql
     environment:
       - MYSQL_ALLOW_EMPTY_PASSWORD=TRUE
@@ -37,6 +38,7 @@ services:
     expose:
       - 25565
   waterfall:
+    restart: always
     build: waterfall
     ports: 
     - 25565:25565
