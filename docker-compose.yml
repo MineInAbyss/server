@@ -7,6 +7,14 @@ services:
       - MYSQL_ALLOW_EMPTY_PASSWORD=TRUE
     expose:
     - 3306
+  sync:
+    build: sync
+    restart: always
+    environment:
+      - PERIOD=900
+    volumes:
+      - ./cloud:/cloud
+      - ~/.aws/:/home/root/.aws/
   build:
     restart: always
     privileged: True

@@ -1,14 +1,2 @@
 #!/bin/sh
-
-
-# ummmm im going to hell
-
-
-
-# crontab scheduler.txt
-# cron -f
-
-
-echo "I hate my bones"
-
-sleep 360
+while true ; do echo "Running backup" && aws s3 sync /cloud s3://mine-in-abyss-worlds && sleep $PERIOD ; done
