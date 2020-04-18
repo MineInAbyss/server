@@ -14,7 +14,7 @@ services:
       - PERIOD=900
     volumes:
       - ./cloud:/cloud
-      - ~/.aws/:/home/root/.aws/
+      - ~/.aws/:/root/.aws/
   build:
     restart: always
     privileged: True
