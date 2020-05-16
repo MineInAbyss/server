@@ -1,6 +1,6 @@
 #FROM amazon/aws-cli
 
-FROM ubuntu
+FROM ubuntu:18.04
 
 VOLUME "/cloud"
 
