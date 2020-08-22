@@ -18,14 +18,15 @@ services:
   build:
     restart: always
     privileged: True
-    build: minecraft
+    build: 
+      context: minecraft
+      args: 
+        - SERVER_TYPE=build
     tmpfs:
       - /tmp
     env_file: default.env
     depends_on:
       - db
-    environment: 
-      - UWU=build
     volumes:
       - ./cloud:/cloud
     expose:
@@ -33,14 +34,15 @@ services:
   survival:
     restart: always
     privileged: True
-    build: minecraft
+    build: 
+      context: minecraft
+      args: 
+        - SERVER_TYPE=survival
     tmpfs:
       - /tmp
     env_file: default.env
     depends_on:
       - db
-    environment: 
-      - UWU=survival
     volumes:
       - ./cloud:/cloud
     expose:
